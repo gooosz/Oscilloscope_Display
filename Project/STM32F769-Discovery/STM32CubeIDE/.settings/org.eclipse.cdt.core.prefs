@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1798944213/EMBSYSLIB/delimiter=\:
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1798944213/EMBSYSLIB/operation=append
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1798944213/EMBSYSLIB/value=/home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1798944213/append=true
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1798944213/appendContributed=true

@@ -1,0 +1,114 @@
+\hypertarget{classcMyInterf}{}\doxysection{c\+My\+Interf Class Reference}
+\label{classcMyInterf}\index{cMyInterf@{cMyInterf}}
+
+
+Inheritance diagram for c\+My\+Interf\+:
+% FIG 0
+
+
+Collaboration diagram for c\+My\+Interf\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcMyInterf_a52eab39f4d919729893030d84c131eb0}\label{classcMyInterf_a52eab39f4d919729893030d84c131eb0}} 
+{\bfseries c\+My\+Interf} (USBdevice \&usb, BYTE interf\+Id)
+\item 
+\mbox{\Hypertarget{classcMyInterf_aaf8bb515bda6d224960fdb3f840a2162}\label{classcMyInterf_aaf8bb515bda6d224960fdb3f840a2162}} 
+virtual void {\bfseries on\+Config\+Endpoint} (BYTE ep\+Id, Data\+Pointer \&data, WORD max\+Packet\+Size)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a284c054b7d087e88d81cb9c8bd93eb7a}\label{classcMyInterf_a284c054b7d087e88d81cb9c8bd93eb7a}} 
+virtual bool {\bfseries on\+Transmit} (BYTE ep\+Id, Data\+Pointer \&data)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a5e8109fbd8c44c8b1a10a672c08616db}\label{classcMyInterf_a5e8109fbd8c44c8b1a10a672c08616db}} 
+virtual void {\bfseries on\+Transmit\+Ctrl} (void)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a4f6fd96045019ffc9ecf4ba2b0f036e4}\label{classcMyInterf_a4f6fd96045019ffc9ecf4ba2b0f036e4}} 
+virtual bool {\bfseries on\+Receive} (BYTE ep\+Id, WORD cnt, Data\+Pointer \&data)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a16d8ec369601caa8bf8d68fd2c82f4b8}\label{classcMyInterf_a16d8ec369601caa8bf8d68fd2c82f4b8}} 
+virtual bool {\bfseries on\+Receive\+Ctrl} (WORD cnt)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a6376718a0a1d8ff043f7b835cee005a8}\label{classcMyInterf_a6376718a0a1d8ff043f7b835cee005a8}} 
+virtual bool {\bfseries on\+Request\+Ctrl\+\_\+\+IN} (Data\+Pointer \&data, BYTE request, WORD value, WORD length)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a3431ae77cbfca5ee1f28207a8b01d979}\label{classcMyInterf_a3431ae77cbfca5ee1f28207a8b01d979}} 
+virtual bool {\bfseries on\+Request\+Ctrl\+\_\+\+OUT} (Data\+Pointer \&data, BYTE request, WORD value, WORD length)
+\item 
+\mbox{\Hypertarget{classcMyInterf_abe9fe2d8f8ef859c2749d47066544429}\label{classcMyInterf_abe9fe2d8f8ef859c2749d47066544429}} 
+class {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((packed)) c\+Data
+\item 
+\mbox{\Hypertarget{classcMyInterf_ab02fdd6930314f2b2173b5f4dc7fb417}\label{classcMyInterf_ab02fdd6930314f2b2173b5f4dc7fb417}} 
+{\bfseries c\+My\+Interf} (USBdevice \&usb, BYTE config\+Id, BYTE interf\+Id)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a9656bef5a5eb97f167a312c1bc2b91a1}\label{classcMyInterf_a9656bef5a5eb97f167a312c1bc2b91a1}} 
+virtual bool {\bfseries on\+Report\+Transmit} ()
+\item 
+\mbox{\Hypertarget{classcMyInterf_aa3d9806d8a2d53acf32adfafc4486c1e}\label{classcMyInterf_aa3d9806d8a2d53acf32adfafc4486c1e}} 
+virtual bool {\bfseries on\+Report\+Receive} ()
+\item 
+\mbox{\Hypertarget{classcMyInterf_abe9fe2d8f8ef859c2749d47066544429}\label{classcMyInterf_abe9fe2d8f8ef859c2749d47066544429}} 
+class {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((packed)) c\+Data
+\item 
+\mbox{\Hypertarget{classcMyInterf_ab02fdd6930314f2b2173b5f4dc7fb417}\label{classcMyInterf_ab02fdd6930314f2b2173b5f4dc7fb417}} 
+{\bfseries c\+My\+Interf} (USBdevice \&usb, BYTE config\+Id, BYTE interf\+Id)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a9656bef5a5eb97f167a312c1bc2b91a1}\label{classcMyInterf_a9656bef5a5eb97f167a312c1bc2b91a1}} 
+virtual bool {\bfseries on\+Report\+Transmit} ()
+\item 
+\mbox{\Hypertarget{classcMyInterf_aa3d9806d8a2d53acf32adfafc4486c1e}\label{classcMyInterf_aa3d9806d8a2d53acf32adfafc4486c1e}} 
+virtual bool {\bfseries on\+Report\+Receive} ()
+\item 
+\mbox{\Hypertarget{classcMyInterf_adca448a7a5e880c1c7f6b752190c06ff}\label{classcMyInterf_adca448a7a5e880c1c7f6b752190c06ff}} 
+bool {\bfseries is\+Running} ()
+\item 
+\mbox{\Hypertarget{classcMyInterf_abe9fe2d8f8ef859c2749d47066544429}\label{classcMyInterf_abe9fe2d8f8ef859c2749d47066544429}} 
+class {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((packed)) c\+Data
+\item 
+\mbox{\Hypertarget{classcMyInterf_ab02fdd6930314f2b2173b5f4dc7fb417}\label{classcMyInterf_ab02fdd6930314f2b2173b5f4dc7fb417}} 
+{\bfseries c\+My\+Interf} (USBdevice \&usb, BYTE config\+Id, BYTE interf\+Id)
+\item 
+\mbox{\Hypertarget{classcMyInterf_a9656bef5a5eb97f167a312c1bc2b91a1}\label{classcMyInterf_a9656bef5a5eb97f167a312c1bc2b91a1}} 
+virtual bool {\bfseries on\+Report\+Transmit} ()
+\item 
+\mbox{\Hypertarget{classcMyInterf_aa3d9806d8a2d53acf32adfafc4486c1e}\label{classcMyInterf_aa3d9806d8a2d53acf32adfafc4486c1e}} 
+virtual bool {\bfseries on\+Report\+Receive} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcMyInterf_ad426946394e5814025a022e7e308add4}\label{classcMyInterf_ad426946394e5814025a022e7e308add4}} 
+c\+Data {\bfseries write\+Buffer}
+\item 
+\mbox{\Hypertarget{classcMyInterf_a45e2b135dfa017dddc5c15329c5bd2aa}\label{classcMyInterf_a45e2b135dfa017dddc5c15329c5bd2aa}} 
+c\+Data {\bfseries read\+Buffer}
+\item 
+\mbox{\Hypertarget{classcMyInterf_a2f4d62ae37440ddce92430b723a6ed45}\label{classcMyInterf_a2f4d62ae37440ddce92430b723a6ed45}} 
+Flag$<$ bool $>$ {\bfseries is\+New}
+\item 
+\mbox{\Hypertarget{classcMyInterf_a6b0901e76b3cf08aa8d5fc73130ff071}\label{classcMyInterf_a6b0901e76b3cf08aa8d5fc73130ff071}} 
+WORD {\bfseries cnt}
+\item 
+\mbox{\Hypertarget{classcMyInterf_a3bea3e6d137af3186f5bb0af87e648be}\label{classcMyInterf_a3bea3e6d137af3186f5bb0af87e648be}} 
+BYTE {\bfseries led} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{classcMyInterf_a9c0a77107ce60ed84257cb498cd86e59}\label{classcMyInterf_a9c0a77107ce60ed84257cb498cd86e59}} 
+c\+Data {\bfseries data\+IN}
+\item 
+\mbox{\Hypertarget{classcMyInterf_ab6d156aa847f318d1e43e6df585a7599}\label{classcMyInterf_ab6d156aa847f318d1e43e6df585a7599}} 
+BYTE {\bfseries nr}
+\item 
+\mbox{\Hypertarget{classcMyInterf_aa74290c65a6720d3d8fe0dcd01abb0c6}\label{classcMyInterf_aa74290c65a6720d3d8fe0dcd01abb0c6}} 
+Flag$<$ BYTE $>$ {\bfseries is\+New}
+\item 
+\mbox{\Hypertarget{classcMyInterf_a05dab91840bf72e323f4bdb79bd9ae78}\label{classcMyInterf_a05dab91840bf72e323f4bdb79bd9ae78}} 
+Flag$<$ BYTE $>$ {\bfseries key}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Src/\+Main/\+Hardware/\mbox{\hyperlink{HwUSBdevice_8cpp}{Hw\+USBdevice.\+cpp}}\item 
+Src/\+Main/\+Module/\+USB/\mbox{\hyperlink{ModUSBkeyboard_8cpp}{Mod\+USBkeyboard.\+cpp}}\item 
+Src/\+Main/\+Module/\+USB/Mod\+USBmouse.\+cpp\item 
+Src/\+Main/\+Module/\+USB/\mbox{\hyperlink{ModUSBvolume_8cpp}{Mod\+USBvolume.\+cpp}}\end{DoxyCompactItemize}

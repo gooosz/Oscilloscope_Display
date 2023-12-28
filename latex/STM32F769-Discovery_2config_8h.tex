@@ -1,0 +1,111 @@
+\hypertarget{STM32F769-Discovery_2config_8h}{}\doxysection{Src/\+Board/\+STM32\+F769-\/\+Discovery/config.h File Reference}
+\label{STM32F769-Discovery_2config_8h}\index{Src/Board/STM32F769-\/Discovery/config.h@{Src/Board/STM32F769-\/Discovery/config.h}}
+
+
+Board specific configuration.  
+
+
+{\ttfamily \#include \char`\"{}Hardware/\+Peripheral/\+Display/\+Display\+Graphic\+\_\+\+OTM8009\+A.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Hardware/\+Peripheral/\+Display/\+Touch\+\_\+\+FT6206.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Color/\+Color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Font/\+Font\+\_\+10x20.\+h\char`\"{}}\newline
+Include dependency graph for config.\+h\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a933ad994105def3a4f67412c6fd79e39}\label{STM32F769-Discovery_2config_8h_a933ad994105def3a4f67412c6fd79e39}} 
+Port\+\_\+\+Mcu {\bfseries portA} (Port\+\_\+\+Mcu\+::\+PA)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_ab25c171e81574dc10d1493654fd676ee}\label{STM32F769-Discovery_2config_8h_ab25c171e81574dc10d1493654fd676ee}} 
+Port\+\_\+\+Mcu {\bfseries portC} (Port\+\_\+\+Mcu\+::\+PC)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a1ab77d08f938a93bcd97eaadccfd5bb7}\label{STM32F769-Discovery_2config_8h_a1ab77d08f938a93bcd97eaadccfd5bb7}} 
+Port\+\_\+\+Mcu {\bfseries portF} (Port\+\_\+\+Mcu\+::\+PF)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a4fadf76fcb7b805a300b286d79932878}\label{STM32F769-Discovery_2config_8h_a4fadf76fcb7b805a300b286d79932878}} 
+Port\+\_\+\+Mcu {\bfseries portJ} (Port\+\_\+\+Mcu\+::\+PJ)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_aa0592414b73e432990b181ec1d87efdc}\label{STM32F769-Discovery_2config_8h_aa0592414b73e432990b181ec1d87efdc}} 
+Timer\+\_\+\+Mcu {\bfseries timer} (Timer\+\_\+\+Mcu\+::\+TIM\+\_\+11, 100L)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a07068e98f0cec8090c42973d70456aa9}\label{STM32F769-Discovery_2config_8h_a07068e98f0cec8090c42973d70456aa9}} 
+Task\+Manager {\bfseries task\+Manager} (timer)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a8c90e34c5c454a2241856a7714474315}\label{STM32F769-Discovery_2config_8h_a8c90e34c5c454a2241856a7714474315}} 
+Adc\+\_\+\+Mcu {\bfseries adc} (Adc\+\_\+\+Mcu\+::\+ADC\+\_\+3, timer)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_aab39d31bdb44d1003c030633f5d615c4}\label{STM32F769-Discovery_2config_8h_aab39d31bdb44d1003c030633f5d615c4}} 
+I2\+Cmaster\+\_\+\+Mcu {\bfseries i2c\+Bus\+Touch} (I2\+Cmaster\+\_\+\+Mcu\+::\+I2\+C\+\_\+4, 400)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a9b73b9c4a32ce32ef5b4f938bc6c54a7}\label{STM32F769-Discovery_2config_8h_a9b73b9c4a32ce32ef5b4f938bc6c54a7}} 
+Uart\+\_\+\+Mcu {\bfseries uart} (Uart\+\_\+\+Mcu\+::\+USART\+\_\+1, 9600, Uart\+\_\+\+Mcu\+::\+NONE, 100, 100)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a13d89fcd8c12f81627e1e5d0fbf3d068}\label{STM32F769-Discovery_2config_8h_a13d89fcd8c12f81627e1e5d0fbf3d068}} 
+Terminal {\bfseries terminal} (uart, 255, 255,\char`\"{}\# +\char`\"{})
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a4f5ce111d79fa20542f1463269968e97}\label{STM32F769-Discovery_2config_8h_a4f5ce111d79fa20542f1463269968e97}} 
+Port\+::\+Pin {\bfseries lcd\+Reset\+Pin} (portJ, 15)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a88e59d34f6726c678fe544ccee3c1543}\label{STM32F769-Discovery_2config_8h_a88e59d34f6726c678fe544ccee3c1543}} 
+Fmc\+\_\+\+Mcu {\bfseries fmc} (Fmc\+\_\+\+Mcu\+::\+SDRAM\+\_\+\+Bank1)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_ab5203635de7f877e9006f71c42d999b4}\label{STM32F769-Discovery_2config_8h_ab5203635de7f877e9006f71c42d999b4}} 
+Dsi\+\_\+\+Mcu {\bfseries hw\+DSI} (fmc.\+start\+Addr())
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a7df38b430b078ca98724ba68c9e903e7}\label{STM32F769-Discovery_2config_8h_a7df38b430b078ca98724ba68c9e903e7}} 
+Display\+Graphic\+\_\+\+OTM8009\+Aram {\bfseries disp\+Graphic} (hw\+DSI, lcd\+Reset\+Pin, Display\+Graphic\+\_\+\+OTM8009\+A\+::\+LANDSCAPE\+\_\+90, font\+Font\+\_\+10x20, 1)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_ac7b4cf2dbddfbda9833829d068981c5e}\label{STM32F769-Discovery_2config_8h_ac7b4cf2dbddfbda9833829d068981c5e}} 
+Screen\+Graphic {\bfseries screen} (disp\+Graphic)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_ae12b786d1a3c5ecbcd71011592858456}\label{STM32F769-Discovery_2config_8h_ae12b786d1a3c5ecbcd71011592858456}} 
+Touch\+\_\+\+FT6206 {\bfseries touch} (i2c\+Bus\+Touch, 800, 480)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_ae836cb593363bb25c5741ab8886debe3}\label{STM32F769-Discovery_2config_8h_ae836cb593363bb25c5741ab8886debe3}} 
+Pointer {\bfseries pointer} (touch)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a82d06494fb00f1c19e967dcc228ae4b7}\label{STM32F769-Discovery_2config_8h_a82d06494fb00f1c19e967dcc228ae4b7}} 
+Digital {\bfseries led\+\_\+A} (portJ, 13, Digital\+::\+Out, 0)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_af76dd86ab32e2bef94e6ff3e4e6bbdaa}\label{STM32F769-Discovery_2config_8h_af76dd86ab32e2bef94e6ff3e4e6bbdaa}} 
+Digital {\bfseries btn\+\_\+A} (portA, 0, Digital\+::\+In, 0)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_aa570003a866c7109d1a8ed3172e38f62}\label{STM32F769-Discovery_2config_8h_aa570003a866c7109d1a8ed3172e38f62}} 
+Digital {\bfseries btn\+Left} (portF, 8, Digital\+::\+In\+PU, 1)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a8f5a103610b5079cb3c407fa8b1e59b7}\label{STM32F769-Discovery_2config_8h_a8f5a103610b5079cb3c407fa8b1e59b7}} 
+Digital {\bfseries btn\+Ctrl} (portF, 9, Digital\+::\+In\+PU, 1)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a11b8e3036afb0101e8786bbdaa929125}\label{STM32F769-Discovery_2config_8h_a11b8e3036afb0101e8786bbdaa929125}} 
+Digital {\bfseries btn\+Right} (portA, 6, Digital\+::\+In\+PU, 1)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a0d4e9261fbc0d7fd66c71611a219a769}\label{STM32F769-Discovery_2config_8h_a0d4e9261fbc0d7fd66c71611a219a769}} 
+Digital\+Indicator {\bfseries indicator} (led\+\_\+A, task\+Manager)
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a44a8de811f71bf0f5a21a3c2fb20ccc6}\label{STM32F769-Discovery_2config_8h_a44a8de811f71bf0f5a21a3c2fb20ccc6}} 
+Digital\+Button {\bfseries button} (btn\+\_\+A, task\+Manager, 40, 1000)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a5735cb5efb1d402a9abf4fc2177580b2}\label{STM32F769-Discovery_2config_8h_a5735cb5efb1d402a9abf4fc2177580b2}} 
+WORD {\bfseries adc\+\_\+\+A1} = 12
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a969538330471f985fd8fbffccbe26b82}\label{STM32F769-Discovery_2config_8h_a969538330471f985fd8fbffccbe26b82}} 
+WORD {\bfseries adc\+\_\+\+A2} = 8
+\item 
+\mbox{\Hypertarget{STM32F769-Discovery_2config_8h_a5658b6db6e6c73863f6c48265dd3c496}\label{STM32F769-Discovery_2config_8h_a5658b6db6e6c73863f6c48265dd3c496}} 
+Digital\+Encoder\+Joystick encoder \& {\bfseries btn\+Left}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Board specific configuration. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Breuer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23.\+02.\+2023 
+\end{DoxyDate}

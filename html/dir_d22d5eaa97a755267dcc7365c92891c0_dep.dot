@@ -1,0 +1,11 @@
+digraph "Src/Board/Virtual" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_95f64f02ac1bce4787d035a0edb34104 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Board" fontname="Helvetica", fontsize="10", URL="dir_95f64f02ac1bce4787d035a0edb34104.html"]
+  dir_d22d5eaa97a755267dcc7365c92891c0 [shape=box, label="Virtual", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d22d5eaa97a755267dcc7365c92891c0.html"];
+  }
+  dir_b5fcef30cf45c7097d12c1607f345da9 [shape=box label="Resource" fillcolor="white" style="filled" color="red" URL="dir_b5fcef30cf45c7097d12c1607f345da9.html"];
+  dir_d22d5eaa97a755267dcc7365c92891c0->dir_b5fcef30cf45c7097d12c1607f345da9 [headlabel="2", labeldistance=1.5 headhref="dir_000003_000021.html"];
+}

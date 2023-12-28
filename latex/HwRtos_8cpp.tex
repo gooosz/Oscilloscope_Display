@@ -1,0 +1,60 @@
+\hypertarget{HwRtos_8cpp}{}\doxysection{Src/\+Main/\+Hardware/\+Hw\+Rtos.cpp File Reference}
+\label{HwRtos_8cpp}\index{Src/Main/Hardware/HwRtos.cpp@{Src/Main/Hardware/HwRtos.cpp}}
+
+
+Sample of using hardware related class Rtos.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Emb\+Sys\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Report\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config\+Hw.\+h\char`\"{}}\newline
+Include dependency graph for Hw\+Rtos.\+cpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmyRTOS}{my\+RTOS}}
+\item 
+class \mbox{\hyperlink{classmyRTOS_1_1Task}{my\+RTOS\+::\+Task}}
+\item 
+class \mbox{\hyperlink{classmyTask}{my\+Task}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{HwRtos_8cpp_a6648e62be4309cd1cce4072a8a494765}\label{HwRtos_8cpp_a6648e62be4309cd1cce4072a8a494765}} 
+\#define {\bfseries NUM\+\_\+\+OF\+\_\+\+TASKS}~4
+\item 
+\mbox{\Hypertarget{HwRtos_8cpp_a21d9543c516fffee84a7963224271f95}\label{HwRtos_8cpp_a21d9543c516fffee84a7963224271f95}} 
+\#define {\bfseries STACKSIZE}~500
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{HwRtos_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{HwRtos_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{HwRtos_8cpp_a2b61cd7f9de49008518a7ecee6ce4417}\label{HwRtos_8cpp_a2b61cd7f9de49008518a7ecee6ce4417}} 
+\mbox{\hyperlink{classmyRTOS}{my\+RTOS}} {\bfseries rtos} (1000)
+\item 
+\mbox{\Hypertarget{HwRtos_8cpp_a81130045d0ce943fb13a174bba35fd44}\label{HwRtos_8cpp_a81130045d0ce943fb13a174bba35fd44}} 
+\mbox{\hyperlink{classmyTask}{my\+Task}} {\bfseries task1} (rtos)
+\item 
+\mbox{\Hypertarget{HwRtos_8cpp_a81bbb26965492a2df481b382737db69e}\label{HwRtos_8cpp_a81bbb26965492a2df481b382737db69e}} 
+\mbox{\hyperlink{classmyTask}{my\+Task}} {\bfseries task2} (rtos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sample of using hardware related class Rtos. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Breuer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07.\+03.\+2023 
+\end{DoxyDate}

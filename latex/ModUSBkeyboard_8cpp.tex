@@ -1,0 +1,61 @@
+\hypertarget{ModUSBkeyboard_8cpp}{}\doxysection{Src/\+Main/\+Module/\+USB/\+Mod\+USBkeyboard.cpp File Reference}
+\label{ModUSBkeyboard_8cpp}\index{Src/Main/Module/USB/ModUSBkeyboard.cpp@{Src/Main/Module/USB/ModUSBkeyboard.cpp}}
+
+
+Sample of using USB as HID keyboard.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Emb\+Sys\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Module/\+USB/\+USBinterf\+Class\+HID.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Report\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mod\+USBkeyboard/descriptor.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+Include dependency graph for Mod\+USBkeyboard.\+cpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcMyInterf}{c\+My\+Interf}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ModUSBkeyboard_8cpp_ad854ef292f046e84dfc85fe90a8a373e}\label{ModUSBkeyboard_8cpp_ad854ef292f046e84dfc85fe90a8a373e}} 
+enum {\bfseries keycode\+Modifier} \{ \newline
+{\bfseries NONE} = 0
+, {\bfseries LEFT\+\_\+\+CTRl} = 0x01
+, {\bfseries LEFT\+\_\+\+SHIFT} = 0x02
+, {\bfseries LEFT\+\_\+\+ALT} = 0x04
+, \newline
+{\bfseries LEFT\+\_\+\+GUI} = 0x08
+, {\bfseries RIGHT\+\_\+\+CTRL} = 0x10
+, {\bfseries RIGHT\+\_\+\+SHIFT} = 0x20
+, {\bfseries RIGHT\+\_\+\+ALT} = 0x40
+, \newline
+{\bfseries RIGHT\+\_\+\+GUI} = 0x80
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ModUSBkeyboard_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{ModUSBkeyboard_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ModUSBkeyboard_8cpp_a6c2fede9be60b228eded2507f0a6e236}\label{ModUSBkeyboard_8cpp_a6c2fede9be60b228eded2507f0a6e236}} 
+BYTE {\bfseries scancode} \mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sample of using USB as HID keyboard. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Breuer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}

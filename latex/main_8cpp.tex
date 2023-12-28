@@ -1,0 +1,207 @@
+\hypertarget{main_8cpp}{}\doxysection{Src/main.cpp File Reference}
+\label{main_8cpp}\index{Src/main.cpp@{Src/main.cpp}}
+
+
+Display for Oscilloscope and ADC measuring.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Emb\+Sys\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Report\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ringbuf\+\_\+t.\+hpp\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMyTimer}{My\+Timer}}
+\item 
+struct \mbox{\hyperlink{structfloat2int}{float2int}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_af675e47c038bc2a7f746eba51da99fe7}\label{main_8cpp_af675e47c038bc2a7f746eba51da99fe7}} 
+\#define {\bfseries SAMPLESIZE}~(799 -\/ 2$\ast$4)
+\item 
+\mbox{\Hypertarget{main_8cpp_a2cbc1881a4a56192658aa7c91ad9307d}\label{main_8cpp_a2cbc1881a4a56192658aa7c91ad9307d}} 
+\#define {\bfseries DASHBREITE}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{main_8cpp_aa14a93e72bb50b69ed58509efaaf6916}{get\+ADCVolt}} (void)
+\item 
+int \mbox{\hyperlink{main_8cpp_afc606e39e4a751f96f57c4c1cd58d287}{y\+Coord\+From\+Volt}} (double volt, int pixel\+Per\+Volt)
+\item 
+void \mbox{\hyperlink{main_8cpp_af7d93bfbc38f0e300af5b77a0c284b86}{draw\+Coordinate\+System}} (int pixel\+Per\+Volt, int pixel\+Per\+Second)
+\item 
+int \mbox{\hyperlink{main_8cpp_aca89a36ea72f3c8f027c9f88112ccff5}{x\+Coord\+From\+Time}} (int time, int pixel\+Per\+Second)
+\item 
+void \mbox{\hyperlink{main_8cpp_a813b7f4f351d6477981056c786021c0d}{print\+Info\+Text}} (float volt)
+\item 
+struct \mbox{\hyperlink{structfloat2int}{float2int}} \mbox{\hyperlink{main_8cpp_a3610ced5cfc7faf38f5dcde09a5f57bf}{float2int}} (float value, int accuracy)
+\item 
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_aa7cea1bc3cea0cac6fa72e6429af9fe0}\label{main_8cpp_aa7cea1bc3cea0cac6fa72e6429af9fe0}} 
+const int {\bfseries xmax} = screen.\+get\+Width() -\/ 1
+\item 
+\mbox{\Hypertarget{main_8cpp_ae46b281897593d3dc9fbfe46d9958563}\label{main_8cpp_ae46b281897593d3dc9fbfe46d9958563}} 
+const int {\bfseries ymax} = screen.\+get\+Height() -\/ 1
+\item 
+\mbox{\Hypertarget{main_8cpp_a788ce8899b0efc978b92d5b7a5152102}\label{main_8cpp_a788ce8899b0efc978b92d5b7a5152102}} 
+const int {\bfseries voltmin} = -\/15
+\item 
+\mbox{\Hypertarget{main_8cpp_ae4e3487dcbf515ede2f0a53e0dbef3b1}\label{main_8cpp_ae4e3487dcbf515ede2f0a53e0dbef3b1}} 
+const int {\bfseries voltmax} = 15
+\item 
+\mbox{\Hypertarget{main_8cpp_a3fe3a8d06977123e332b5a01abe1e8e8}\label{main_8cpp_a3fe3a8d06977123e332b5a01abe1e8e8}} 
+const int {\bfseries num\+Of\+Volt\+Labels} = abs(voltmax) + abs(voltmin)
+\item 
+\mbox{\Hypertarget{main_8cpp_abcf0ceaa6bfef1ad8af7dfe1dc49e4d4}\label{main_8cpp_abcf0ceaa6bfef1ad8af7dfe1dc49e4d4}} 
+const int {\bfseries pixel\+Per\+Volt} = ymax / num\+Of\+Volt\+Labels
+\item 
+\mbox{\Hypertarget{main_8cpp_a6f5f63f6cdab3649da17340e99b5b59a}\label{main_8cpp_a6f5f63f6cdab3649da17340e99b5b59a}} 
+const int {\bfseries only\+Label\+Every} = voltmax / 7.\+5
+\item 
+\mbox{\Hypertarget{main_8cpp_ad81268973e1852ad40d9104baace9d22}\label{main_8cpp_ad81268973e1852ad40d9104baace9d22}} 
+const int {\bfseries gpio\+\_\+vmin} = 0
+\item 
+\mbox{\Hypertarget{main_8cpp_a6bc60095c827257a68a2a9c7cb80465f}\label{main_8cpp_a6bc60095c827257a68a2a9c7cb80465f}} 
+const float {\bfseries gpio\+\_\+vmax} = 3.\+3
+\item 
+\mbox{\Hypertarget{main_8cpp_aac52191a09bd8d7be7b6aeba3b0a18d5}\label{main_8cpp_aac52191a09bd8d7be7b6aeba3b0a18d5}} 
+volatile float {\bfseries volts} \mbox{[}SAMPLESIZE\mbox{]} = \{0\}
+\item 
+\mbox{\Hypertarget{main_8cpp_a6aedb360ef2f59e5dd4646443268a067}\label{main_8cpp_a6aedb360ef2f59e5dd4646443268a067}} 
+volatile bool {\bfseries volts\+Voll} = false
+\item 
+\mbox{\Hypertarget{main_8cpp_a162fdba81d008393220114d79c215779}\label{main_8cpp_a162fdba81d008393220114d79c215779}} 
+volatile int {\bfseries volt\+Count} = 0
+\item 
+\mbox{\Hypertarget{main_8cpp_ab15e296825a8960fe5566d39143dfd07}\label{main_8cpp_ab15e296825a8960fe5566d39143dfd07}} 
+const int {\bfseries seconds\+To\+Display} = 10
+\item 
+\mbox{\Hypertarget{main_8cpp_a2ce5713af3cbbbfbb89d3e7898e0a456}\label{main_8cpp_a2ce5713af3cbbbfbb89d3e7898e0a456}} 
+const float {\bfseries pixel\+Per\+Second} = xmax / seconds\+To\+Display
+\item 
+\mbox{\Hypertarget{main_8cpp_ae811f551c8423f621112da122bab5b71}\label{main_8cpp_ae811f551c8423f621112da122bab5b71}} 
+const int {\bfseries first\+Label} = xmax/2 -\/ (seconds\+To\+Display/2) $\ast$ pixel\+Per\+Second
+\item 
+\mbox{\Hypertarget{main_8cpp_ad754bc805db5456c778513e3b8b4648e}\label{main_8cpp_ad754bc805db5456c778513e3b8b4648e}} 
+const int {\bfseries last\+Label} = first\+Label + seconds\+To\+Display $\ast$ pixel\+Per\+Second
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Display for Oscilloscope and ADC measuring. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Breuer, Len-\/\+Marvin Adler 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11.\+12.\+2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_af7d93bfbc38f0e300af5b77a0c284b86}\label{main_8cpp_af7d93bfbc38f0e300af5b77a0c284b86}} 
+\index{main.cpp@{main.cpp}!drawCoordinateSystem@{drawCoordinateSystem}}
+\index{drawCoordinateSystem@{drawCoordinateSystem}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{drawCoordinateSystem()}{drawCoordinateSystem()}}
+{\footnotesize\ttfamily void draw\+Coordinate\+System (\begin{DoxyParamCaption}\item[{int}]{pixel\+Per\+Volt,  }\item[{int}]{pixel\+Per\+Second }\end{DoxyParamCaption})}
+
+draws the coordinate system on screen
+
+Draws the time (horizontal) axis and voltage (vertical) axis on screen with scaling (labels/values) 
+\begin{DoxyParams}{Parameters}
+{\em pixel\+Per\+Volt} & The distance from 1 label on Y-\/\+Axis to another, so how many pixel are inbetween the labels of Volt \\
+\hline
+{\em pixel\+Per\+Second} & The distance from 1 label on X-\/\+Axis to another, so how many pixel are inbetween the labels of Time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a3610ced5cfc7faf38f5dcde09a5f57bf}\label{main_8cpp_a3610ced5cfc7faf38f5dcde09a5f57bf}} 
+\index{main.cpp@{main.cpp}!float2int@{float2int}}
+\index{float2int@{float2int}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{float2int()}{float2int()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structfloat2int}{float2int}} \mbox{\hyperlink{structfloat2int}{float2int}} (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{int}]{accuracy }\end{DoxyParamCaption})}
+
+convert a float to a \mbox{\hyperlink{structfloat2int}{float2int}} to use it in screen.\+draw\+Text
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the float to convert \\
+\hline
+{\em accuracy} & the amount of decimal places to use (no rounding) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_aa14a93e72bb50b69ed58509efaaf6916}\label{main_8cpp_aa14a93e72bb50b69ed58509efaaf6916}} 
+\index{main.cpp@{main.cpp}!getADCVolt@{getADCVolt}}
+\index{getADCVolt@{getADCVolt}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{getADCVolt()}{getADCVolt()}}
+{\footnotesize\ttfamily float get\+ADCVolt (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+get Voltage at GPIO Pin
+
+\begin{DoxyReturn}{Returns}
+voltage measured at GPIO/\+ADC A1 between 0V and 3V 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a813b7f4f351d6477981056c786021c0d}\label{main_8cpp_a813b7f4f351d6477981056c786021c0d}} 
+\index{main.cpp@{main.cpp}!printInfoText@{printInfoText}}
+\index{printInfoText@{printInfoText}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{printInfoText()}{printInfoText()}}
+{\footnotesize\ttfamily void print\+Info\+Text (\begin{DoxyParamCaption}\item[{float}]{volt }\end{DoxyParamCaption})}
+
+print info in top left corner of screen
+
+displays 6 decimal places of volt 
+\begin{DoxyParams}{Parameters}
+{\em volt} & measured voltage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_aca89a36ea72f3c8f027c9f88112ccff5}\label{main_8cpp_aca89a36ea72f3c8f027c9f88112ccff5}} 
+\index{main.cpp@{main.cpp}!xCoordFromTime@{xCoordFromTime}}
+\index{xCoordFromTime@{xCoordFromTime}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{xCoordFromTime()}{xCoordFromTime()}}
+{\footnotesize\ttfamily int x\+Coord\+From\+Time (\begin{DoxyParamCaption}\item[{int}]{time,  }\item[{int}]{pixel\+Per\+Second }\end{DoxyParamCaption})}
+
+returns the X-\/\+Coordinate of a given time/second
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Current time of RTC, e.\+g. \mbox{\hyperlink{classMyTimer_ab028badc3b64c6b6e7203b301c7042c2}{My\+Timer.\+time}} in 100th µs \\
+\hline
+{\em pixel\+Per\+Second} & Defines the scaling, how many pixels are needed to display all values 0s to 1s \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_afc606e39e4a751f96f57c4c1cd58d287}\label{main_8cpp_afc606e39e4a751f96f57c4c1cd58d287}} 
+\index{main.cpp@{main.cpp}!yCoordFromVolt@{yCoordFromVolt}}
+\index{yCoordFromVolt@{yCoordFromVolt}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{yCoordFromVolt()}{yCoordFromVolt()}}
+{\footnotesize\ttfamily int y\+Coord\+From\+Volt (\begin{DoxyParamCaption}\item[{double}]{volt,  }\item[{int}]{pixel\+Per\+Volt }\end{DoxyParamCaption})}
+
+get y coordinate from measured voltage
+
+
+\begin{DoxyParams}{Parameters}
+{\em volt} & The measured voltage \\
+\hline
+{\em pixel\+Per\+Volt} & The scaling, how many pixel will be needed to draw 0V to 1V, etc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Corresponding Y-\/\+Coordinate to draw on screen 
+\end{DoxyReturn}

@@ -1,0 +1,39 @@
+\hypertarget{Color_8h}{}\doxysection{Src/\+Resource/\+Color/\+Color.h File Reference}
+\label{Color_8h}\index{Src/Resource/Color/Color.h@{Src/Resource/Color/Color.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classColor}{Color}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries RGB2\+COLOR}(red,  green,  blue)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Thomas Breuer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25.\+11.\+2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Color_8h_adaea1952c966a6400c76143d7c1e437f}\label{Color_8h_adaea1952c966a6400c76143d7c1e437f}} 
+\index{Color.h@{Color.h}!RGB2COLOR@{RGB2COLOR}}
+\index{RGB2COLOR@{RGB2COLOR}!Color.h@{Color.h}}
+\doxysubsubsection{\texorpdfstring{RGB2COLOR}{RGB2COLOR}}
+{\footnotesize\ttfamily \#define RGB2\+COLOR(\begin{DoxyParamCaption}\item[{}]{red,  }\item[{}]{green,  }\item[{}]{blue }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    ( (((blue )\& 0xF8) >> 3)  \textcolor{comment}{/* 5 bit,  0.. 4 */}\(\backslash\)}
+\DoxyCodeLine{     |(((green)\& 0xFC) << 3)  \textcolor{comment}{/* 6 bit,  5..10 */}\(\backslash\)}
+\DoxyCodeLine{     |(((red  )\& 0xF8) << 8)) \textcolor{comment}{/* 5 bit, 11..15 */}}
+
+\end{DoxyCode}

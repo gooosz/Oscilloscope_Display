@@ -1,0 +1,151 @@
+\hypertarget{Virtual_2configHw_8h}{}\doxysection{Src/\+Board/\+Virtual/config\+Hw.h File Reference}
+\label{Virtual_2configHw_8h}\index{Src/Board/Virtual/configHw.h@{Src/Board/Virtual/configHw.h}}
+
+
+Board specific configuration.  
+
+
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Color/\+Color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Font/\+Font\+\_\+16x24.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Font/\+Font\+\_\+10x20.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Font/\+Font\+\_\+8x12.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Font/\+Font\+\_\+8x8.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Bitmap/\+Bitmap\+\_\+320x240.\+h\char`\"{}}\newline
+Include dependency graph for config\+Hw.\+h\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Virtual_2configHw_8h_a7a031a684ff8faaab9a53e660088ed9a}{USE\+\_\+\+UART\+\_\+\+TYPE}}~\textquotesingle{}S\textquotesingle{}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_ab3812d6bdded0c0b0ca92828c683bd93}\label{Virtual_2configHw_8h_ab3812d6bdded0c0b0ca92828c683bd93}} 
+\#define {\bfseries USE\+\_\+\+COM\+\_\+\+PORT}~\char`\"{}COM1\char`\"{}
+\item 
+\#define \mbox{\hyperlink{Virtual_2configHw_8h_aa913762ab42983df3677433d0d3452ab}{USE\+\_\+\+RESOURCE}}~\textquotesingle{}C\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{Virtual_2configHw_8h_ac7dcc06e3d15ba096b52696f3834dc4e}{USE\+\_\+\+CHAR\+\_\+\+DISP\+\_\+\+EMUL}}~false
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_acda7f985ce933ae54a42e2ac41364a7c}\label{Virtual_2configHw_8h_acda7f985ce933ae54a42e2ac41364a7c}} 
+Port\+\_\+\+Virtual {\bfseries port} (\char`\"{}localhost\+:1000\char`\"{})
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a362c835310cf1f4073ec44c7f324daa4}\label{Virtual_2configHw_8h_a362c835310cf1f4073ec44c7f324daa4}} 
+Timer\+\_\+\+Mcu {\bfseries timer\+Fast} (100L)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a1de20609d0d6c36bd383831904336aca}\label{Virtual_2configHw_8h_a1de20609d0d6c36bd383831904336aca}} 
+Timer\+\_\+\+Mcu {\bfseries timer\+Slow} (10000L)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a535728d68dad3d6c9b0a81c795a60f7d}\label{Virtual_2configHw_8h_a535728d68dad3d6c9b0a81c795a60f7d}} 
+Timer\+\_\+\+Mcu {\bfseries timer\+PWM} (512L)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_ab0193d72f9e72c7dd8cc8d41bbed5b72}\label{Virtual_2configHw_8h_ab0193d72f9e72c7dd8cc8d41bbed5b72}} 
+Adc\+\_\+\+Virtual {\bfseries adc} (\char`\"{}localhost\+:1000\char`\"{}, timer\+Fast)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a14faa97a5d1c06c42d0a3864263f0d2c}\label{Virtual_2configHw_8h_a14faa97a5d1c06c42d0a3864263f0d2c}} 
+Dac\+\_\+\+Virtual {\bfseries dac} (\char`\"{}localhost\+:1000\char`\"{})
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a90b55dec262f3e3496fbd9fd84c2b636}\label{Virtual_2configHw_8h_a90b55dec262f3e3496fbd9fd84c2b636}} 
+Display\+Graphic\+\_\+\+Virtual {\bfseries disp\+Graphic} (320, 240, \char`\"{}localhost\+:1000\char`\"{}, font\+Font\+\_\+8x12, 1)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_afcfb5577580f211738c5794a1dcc38a7}\label{Virtual_2configHw_8h_afcfb5577580f211738c5794a1dcc38a7}} 
+Port\+::\+Pin {\bfseries led\+A\+\_\+\+Pin} (port, 16, Port\+::\+Out)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a85c7cbd4fb1e8b42f25ddd99ff4e5189}\label{Virtual_2configHw_8h_a85c7cbd4fb1e8b42f25ddd99ff4e5189}} 
+Port\+::\+Pin {\bfseries led\+B\+\_\+\+Pin} (port, 17, Port\+::\+Out)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a409229acdfb83b7096f069c29bd90c6c}\label{Virtual_2configHw_8h_a409229acdfb83b7096f069c29bd90c6c}} 
+Port\+::\+Pin {\bfseries btn\+A\+\_\+\+Pin} (port, 5, Port\+::\+In)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a55ae646375ad711458891e43f248e969}\label{Virtual_2configHw_8h_a55ae646375ad711458891e43f248e969}} 
+Memory\+\_\+\+Mcu {\bfseries mem} (\char`\"{}mem.\+bin\char`\"{}, 100)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_aa3baa8c6770728de3410b695bc3c213d}\label{Virtual_2configHw_8h_aa3baa8c6770728de3410b695bc3c213d}} 
+Touch\+\_\+\+Virtual {\bfseries touch} (\char`\"{}localhost\+:1000\char`\"{}, 320, 240)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a64cc9397335bcd8f6621e4abafff5870}\label{Virtual_2configHw_8h_a64cc9397335bcd8f6621e4abafff5870}} 
+Port\+\_\+\+Virtual \& {\bfseries led\+Port} = port
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a9ec3499173fcd42e48b74ab7036a2fc4}\label{Virtual_2configHw_8h_a9ec3499173fcd42e48b74ab7036a2fc4}} 
+Port\+\_\+\+Virtual \& {\bfseries btn\+Port} = port
+\item 
+MTYPE {\bfseries led\+Pin\+Mask}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a8a1e3921e665ab3ec4eeb72934aeb0c0}\label{Virtual_2configHw_8h_a8a1e3921e665ab3ec4eeb72934aeb0c0}} 
+MTYPE {\bfseries btn\+Pin\+Mask} = (1$<$$<$ 5)
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a6ad0f90af3bc61474ea880207c848934}\label{Virtual_2configHw_8h_a6ad0f90af3bc61474ea880207c848934}} 
+BYTE {\bfseries timer\+Pwm\+Ch} = 0
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a31e9212c5012c42d442f69de2cad992c}\label{Virtual_2configHw_8h_a31e9212c5012c42d442f69de2cad992c}} 
+BYTE {\bfseries Adc\+Channel\+List} \mbox{[}$\,$\mbox{]} = \{0,1,2,3\}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a42e832c329206aedecbbf87080b1371c}\label{Virtual_2configHw_8h_a42e832c329206aedecbbf87080b1371c}} 
+BYTE {\bfseries Dac\+Channel\+List} \mbox{[}$\,$\mbox{]} = \{0,1,2,3\}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a7b5d4e92c083138b9b5374bf15bc3d58}\label{Virtual_2configHw_8h_a7b5d4e92c083138b9b5374bf15bc3d58}} 
+Display\+Char \& {\bfseries disp} = disp\+Graphic
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a0b957de283ad6766152af3838694e426}\label{Virtual_2configHw_8h_a0b957de283ad6766152af3838694e426}} 
+Rtc\+\_\+\+Mcu {\bfseries rtc}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_abcb545c8717a1605187d5dae742f5854}\label{Virtual_2configHw_8h_abcb545c8717a1605187d5dae742f5854}} 
+Uart\+\_\+\+Stdio {\bfseries uart}
+\item 
+\mbox{\Hypertarget{Virtual_2configHw_8h_a1f5d4846d795f85541c91f03e4eb13a1}\label{Virtual_2configHw_8h_a1f5d4846d795f85541c91f03e4eb13a1}} 
+USBhost\+\_\+\+Mcu {\bfseries usb}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Board specific configuration. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Breuer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26.\+09.\+2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Virtual_2configHw_8h_ac7dcc06e3d15ba096b52696f3834dc4e}\label{Virtual_2configHw_8h_ac7dcc06e3d15ba096b52696f3834dc4e}} 
+\index{configHw.h@{configHw.h}!USE\_CHAR\_DISP\_EMUL@{USE\_CHAR\_DISP\_EMUL}}
+\index{USE\_CHAR\_DISP\_EMUL@{USE\_CHAR\_DISP\_EMUL}!configHw.h@{configHw.h}}
+\doxysubsubsection{\texorpdfstring{USE\_CHAR\_DISP\_EMUL}{USE\_CHAR\_DISP\_EMUL}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+CHAR\+\_\+\+DISP\+\_\+\+EMUL~false}
+
+\hypertarget{Virtual_2configHw_8h_autotoc_md6}{}\doxysubsubsection{Select character display emulation\+:}\label{Virtual_2configHw_8h_autotoc_md6}
+\mbox{\Hypertarget{Virtual_2configHw_8h_aa913762ab42983df3677433d0d3452ab}\label{Virtual_2configHw_8h_aa913762ab42983df3677433d0d3452ab}} 
+\index{configHw.h@{configHw.h}!USE\_RESOURCE@{USE\_RESOURCE}}
+\index{USE\_RESOURCE@{USE\_RESOURCE}!configHw.h@{configHw.h}}
+\doxysubsubsection{\texorpdfstring{USE\_RESOURCE}{USE\_RESOURCE}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+RESOURCE~\textquotesingle{}C\textquotesingle{}}
+
+\hypertarget{Virtual_2configHw_8h_autotoc_md5}{}\doxysubsubsection{Select font and bitmap sources\+:}\label{Virtual_2configHw_8h_autotoc_md5}
+\mbox{\Hypertarget{Virtual_2configHw_8h_a7a031a684ff8faaab9a53e660088ed9a}\label{Virtual_2configHw_8h_a7a031a684ff8faaab9a53e660088ed9a}} 
+\index{configHw.h@{configHw.h}!USE\_UART\_TYPE@{USE\_UART\_TYPE}}
+\index{USE\_UART\_TYPE@{USE\_UART\_TYPE}!configHw.h@{configHw.h}}
+\doxysubsubsection{\texorpdfstring{USE\_UART\_TYPE}{USE\_UART\_TYPE}}
+{\footnotesize\ttfamily \#define USE\+\_\+\+UART\+\_\+\+TYPE~\textquotesingle{}S\textquotesingle{}}
+
+\hypertarget{Virtual_2configHw_8h_autotoc_md4}{}\doxysubsubsection{Select a UART type\+:}\label{Virtual_2configHw_8h_autotoc_md4}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Virtual_2configHw_8h_a8f97812d189b15a76beb480d531cb0ca}\label{Virtual_2configHw_8h_a8f97812d189b15a76beb480d531cb0ca}} 
+\index{configHw.h@{configHw.h}!ledPinMask@{ledPinMask}}
+\index{ledPinMask@{ledPinMask}!configHw.h@{configHw.h}}
+\doxysubsubsection{\texorpdfstring{ledPinMask}{ledPinMask}}
+{\footnotesize\ttfamily MTYPE led\+Pin\+Mask}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= (1<<16)  }
+\DoxyCodeLine{                         |(1<<17)}
+
+\end{DoxyCode}

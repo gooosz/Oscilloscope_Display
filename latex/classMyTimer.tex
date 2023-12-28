@@ -1,0 +1,58 @@
+\hypertarget{classMyTimer}{}\doxysection{My\+Timer Class Reference}
+\label{classMyTimer}\index{MyTimer@{MyTimer}}
+
+
+Inheritance diagram for My\+Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classMyTimer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for My\+Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classMyTimer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMyTimer_a9d0f4dfda256d16ce4843666d59dc579}\label{classMyTimer_a9d0f4dfda256d16ce4843666d59dc579}} 
+{\bfseries My\+Timer} (Task\+Manager \&tm)
+\item 
+void \mbox{\hyperlink{classMyTimer_a219920ab2d4643554e9fe4385a57e522}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMyTimer_ab028badc3b64c6b6e7203b301c7042c2}\label{classMyTimer_ab028badc3b64c6b6e7203b301c7042c2}} 
+int \mbox{\hyperlink{classMyTimer_ab028badc3b64c6b6e7203b301c7042c2}{time}} =0
+\begin{DoxyCompactList}\small\item\em time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Timer needed for using RTC
+
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMyTimer_a219920ab2d4643554e9fe4385a57e522}\label{classMyTimer_a219920ab2d4643554e9fe4385a57e522}} 
+\index{MyTimer@{MyTimer}!update@{update}}
+\index{update@{update}!MyTimer@{MyTimer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void My\+Timer\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get new ADC measurement
+
+will be called every 100µs and pulls a new measurement by ADC from it\textquotesingle{}s 12 Bit register zieht Werte mit Frequenz 10k\+Hz 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Src/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

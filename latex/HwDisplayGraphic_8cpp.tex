@@ -1,0 +1,110 @@
+\hypertarget{HwDisplayGraphic_8cpp}{}\doxysection{Src/\+Main/\+Hardware/\+Hw\+Display\+Graphic.cpp File Reference}
+\label{HwDisplayGraphic_8cpp}\index{Src/Main/Hardware/HwDisplayGraphic.cpp@{Src/Main/Hardware/HwDisplayGraphic.cpp}}
+
+
+Sample of using hardware related classes.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Emb\+Sys\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Report\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config\+Hw.\+h\char`\"{}}\newline
+Include dependency graph for Hw\+Display\+Graphic.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a9c8f41052f41c41400baf50df6f566ae}\label{HwDisplayGraphic_8cpp_a9c8f41052f41c41400baf50df6f566ae}} 
+Bitmap {\bfseries bmp} (bitmap\+Bitmap\+\_\+320x240)
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{HwDisplayGraphic_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+WORD {\bfseries color\+Table} \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a0b86dcaa751c73eb2dddc2b92366eeaa}\label{HwDisplayGraphic_8cpp_a0b86dcaa751c73eb2dddc2b92366eeaa}} 
+WORD {\bfseries num\+Of\+Colors} = sizeof(color\+Table)/sizeof(WORD)
+\item 
+Font {\bfseries font\+Table} \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a5dfa7e35168f0380293077f9f1b202b5}\label{HwDisplayGraphic_8cpp_a5dfa7e35168f0380293077f9f1b202b5}} 
+WORD {\bfseries num\+Of\+Fonts} = sizeof(font\+Table)/sizeof(Font)
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a72e4b733c04528bc6ec709df59d81c23}\label{HwDisplayGraphic_8cpp_a72e4b733c04528bc6ec709df59d81c23}} 
+char {\bfseries txt} \mbox{[}21\mbox{]}
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a45e70500ef7c3af80ca07014ff6f32c1}\label{HwDisplayGraphic_8cpp_a45e70500ef7c3af80ca07014ff6f32c1}} 
+WORD {\bfseries cnt} = 0
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a6d73a7bc05b6365ced27d518f353c77f}\label{HwDisplayGraphic_8cpp_a6d73a7bc05b6365ced27d518f353c77f}} 
+BYTE {\bfseries font} = 0
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_acca80e9fe393e935e4c6bedc9d794bbd}\label{HwDisplayGraphic_8cpp_acca80e9fe393e935e4c6bedc9d794bbd}} 
+BYTE {\bfseries zoom} = 1
+\item 
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_adc08ed1554f35803d229aeaf11216b3f}\label{HwDisplayGraphic_8cpp_adc08ed1554f35803d229aeaf11216b3f}} 
+char {\bfseries c} = \textquotesingle{} \textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sample of using hardware related classes. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Breuer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10.\+08.\+2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a09275187f4027c71898c157af6a95aa5}\label{HwDisplayGraphic_8cpp_a09275187f4027c71898c157af6a95aa5}} 
+\index{HwDisplayGraphic.cpp@{HwDisplayGraphic.cpp}!colorTable@{colorTable}}
+\index{colorTable@{colorTable}!HwDisplayGraphic.cpp@{HwDisplayGraphic.cpp}}
+\doxysubsubsection{\texorpdfstring{colorTable}{colorTable}}
+{\footnotesize\ttfamily WORD color\+Table\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72eab25a0e19abb3ae13599ddd1b3aa6a4cd}{Color::DarkGrey}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea7397d03be320ef0674be99b59e0abd47}{Color::Grey}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72eaf083ddf47c1bf3daf945d525fadd330e}{Color::LightGrey}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea487ea6591400ccf76fcd865179d19835}{Color::White}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72eafdb9abe97342a18d8622783aa5f9a547}{Color::Red}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea35bff40dde9ce70db3132c55f8c53bea}{Color::Green}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72eac8305d1af78f9bc998f69555c9e171bb}{Color::Blue}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea2d18528e48b10b9a5c268c5e47a1b972}{Color::Yellow}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea067f182f046f8d4b99de3ae7643fb2e3}{Color::Cyan}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea4a11aa04f8c20891b45d489cd35d00ac}{Color::Magenta}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea3fdcb7ade3a9c625e64e990e3a14776f}{Color::DarkRed}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea7a5c9754616b532c6a7c25990ad97734}{Color::DarkGreen}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea53f0d3e16e8951cb8bec1c83d6fe4c6e}{Color::DarkBlue}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea807c0af2c201cc231cee4cf64cd3de30}{Color::DarkYellow}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea6801dad5f92f10b00799978bc4c29fbe}{Color::DarkCyan}},}
+\DoxyCodeLine{  \mbox{\hyperlink{classColor_ab5cc30640baa9a8519a343e1ba23c72ea7a9e8393ab2f13eb9f7d940b53441817}{Color::DarkMagenta}}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{HwDisplayGraphic_8cpp_a387219cc13070faf1361bf5ebc6a9f9e}\label{HwDisplayGraphic_8cpp_a387219cc13070faf1361bf5ebc6a9f9e}} 
+\index{HwDisplayGraphic.cpp@{HwDisplayGraphic.cpp}!fontTable@{fontTable}}
+\index{fontTable@{fontTable}!HwDisplayGraphic.cpp@{HwDisplayGraphic.cpp}}
+\doxysubsubsection{\texorpdfstring{fontTable}{fontTable}}
+{\footnotesize\ttfamily Font font\+Table\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  fontFont\_16x24,}
+\DoxyCodeLine{  fontFont\_10x20,}
+\DoxyCodeLine{  fontFont\_8x12,}
+\DoxyCodeLine{  fontFont\_8x8}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

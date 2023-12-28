@@ -1,0 +1,99 @@
+\hypertarget{Virtual_2config_8h}{}\doxysection{Src/\+Board/\+Virtual/config.h File Reference}
+\label{Virtual_2config_8h}\index{Src/Board/Virtual/config.h@{Src/Board/Virtual/config.h}}
+
+
+Board specific configuration.  
+
+
+{\ttfamily \#include \char`\"{}../../\+Resource/\+Color/\+Color.\+h\char`\"{}}\newline
+Include dependency graph for config.\+h\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_acda7f985ce933ae54a42e2ac41364a7c}\label{Virtual_2config_8h_acda7f985ce933ae54a42e2ac41364a7c}} 
+Port\+\_\+\+Virtual {\bfseries port} (\char`\"{}localhost\+:1000\char`\"{})
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_ae0feb7230101aae7a3604b150ad0bfb8}\label{Virtual_2config_8h_ae0feb7230101aae7a3604b150ad0bfb8}} 
+Timer\+\_\+\+Mcu {\bfseries timer} (1000L)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a07068e98f0cec8090c42973d70456aa9}\label{Virtual_2config_8h_a07068e98f0cec8090c42973d70456aa9}} 
+Task\+Manager {\bfseries task\+Manager} (timer)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a4d79470a62018f76af7f285c2ad95b75}\label{Virtual_2config_8h_a4d79470a62018f76af7f285c2ad95b75}} 
+Adc\+\_\+\+Virtual {\bfseries adc} (\char`\"{}localhost\+:1000\char`\"{}, timer)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_ac4652cd2617d3f2ad8502018bd31e606}\label{Virtual_2config_8h_ac4652cd2617d3f2ad8502018bd31e606}} 
+Font {\bfseries font\+Font\+\_\+10x20} (Memory\+\_\+\+Mcu(\char`\"{}../../../Src/Resource/Font/font\+\_\+10x20.\+bin\char`\"{}).get\+Ptr())
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_aab9f58cf6d6b7ea6eb6a88e502ad7a6f}\label{Virtual_2config_8h_aab9f58cf6d6b7ea6eb6a88e502ad7a6f}} 
+Font {\bfseries font\+Font\+\_\+16x24} (Memory\+\_\+\+Mcu(\char`\"{}../../../Src/Resource/Font/font\+\_\+16x24.\+bin\char`\"{}).get\+Ptr())
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a6cc02fed680051707470dbc3175c85db}\label{Virtual_2config_8h_a6cc02fed680051707470dbc3175c85db}} 
+Font {\bfseries font\+Font\+\_\+8x12} (Memory\+\_\+\+Mcu(\char`\"{}../../../Src/Resource/Font/font\+\_\+8x12.\+bin\char`\"{}).get\+Ptr())
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_acd900c2283fce8808a1400639da90491}\label{Virtual_2config_8h_acd900c2283fce8808a1400639da90491}} 
+Font {\bfseries font\+Font\+\_\+8x8} (Memory\+\_\+\+Mcu(\char`\"{}../../../Src/Resource/Font/font\+\_\+8x8.\+bin\char`\"{}).get\+Ptr())
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_ac5f9d5407fcf420b9008ced4b13f8e7a}\label{Virtual_2config_8h_ac5f9d5407fcf420b9008ced4b13f8e7a}} 
+Display\+Graphic\+\_\+\+Virtual {\bfseries disp\+Graphic} (800, 480, \char`\"{}localhost\+:1000\char`\"{}, font\+Font\+\_\+8x12, 1)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_ac7b4cf2dbddfbda9833829d068981c5e}\label{Virtual_2config_8h_ac7b4cf2dbddfbda9833829d068981c5e}} 
+Screen\+Graphic {\bfseries screen} (disp\+Graphic)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_aa4fcabfe6f69a8e18d4bcfac39e0d6f9}\label{Virtual_2config_8h_aa4fcabfe6f69a8e18d4bcfac39e0d6f9}} 
+Uart\+\_\+\+Stdio {\bfseries uart} (true)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a13d89fcd8c12f81627e1e5d0fbf3d068}\label{Virtual_2config_8h_a13d89fcd8c12f81627e1e5d0fbf3d068}} 
+Terminal {\bfseries terminal} (uart, 255, 255,\char`\"{}\# +\char`\"{})
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_aa3baa8c6770728de3410b695bc3c213d}\label{Virtual_2config_8h_aa3baa8c6770728de3410b695bc3c213d}} 
+Touch\+\_\+\+Virtual {\bfseries touch} (\char`\"{}localhost\+:1000\char`\"{}, 320, 240)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_ae836cb593363bb25c5741ab8886debe3}\label{Virtual_2config_8h_ae836cb593363bb25c5741ab8886debe3}} 
+Pointer {\bfseries pointer} (touch)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a494e2ef8e83b7aa0bd29ed17d2b30e9b}\label{Virtual_2config_8h_a494e2ef8e83b7aa0bd29ed17d2b30e9b}} 
+Digital {\bfseries led\+\_\+A} (port, 16, Digital\+::\+Out, 0)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a87e7526ac458fae779a4b13426c4a0b4}\label{Virtual_2config_8h_a87e7526ac458fae779a4b13426c4a0b4}} 
+Digital {\bfseries btn\+\_\+A} (port, 5, Digital\+::\+In, 0)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_ab50e6197f20f34620157628e9181d76d}\label{Virtual_2config_8h_ab50e6197f20f34620157628e9181d76d}} 
+Digital {\bfseries btn\+Left} (port, 0, Digital\+::\+In, 0)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a83c7b7a63ee329ed198bc7682bf606c5}\label{Virtual_2config_8h_a83c7b7a63ee329ed198bc7682bf606c5}} 
+Digital {\bfseries btn\+Ctrl} (port, 1, Digital\+::\+In, 0)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_acc6ad001a26242cbd7d49dfcfbbf62b7}\label{Virtual_2config_8h_acc6ad001a26242cbd7d49dfcfbbf62b7}} 
+Digital {\bfseries btn\+Right} (port, 2, Digital\+::\+In, 0)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a0d4e9261fbc0d7fd66c71611a219a769}\label{Virtual_2config_8h_a0d4e9261fbc0d7fd66c71611a219a769}} 
+Digital\+Indicator {\bfseries indicator} (led\+\_\+A, task\+Manager)
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a44a8de811f71bf0f5a21a3c2fb20ccc6}\label{Virtual_2config_8h_a44a8de811f71bf0f5a21a3c2fb20ccc6}} 
+Digital\+Button {\bfseries button} (btn\+\_\+A, task\+Manager, 40, 1000)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a5735cb5efb1d402a9abf4fc2177580b2}\label{Virtual_2config_8h_a5735cb5efb1d402a9abf4fc2177580b2}} 
+WORD {\bfseries adc\+\_\+\+A1} = 0
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a969538330471f985fd8fbffccbe26b82}\label{Virtual_2config_8h_a969538330471f985fd8fbffccbe26b82}} 
+WORD {\bfseries adc\+\_\+\+A2} = 0
+\item 
+\mbox{\Hypertarget{Virtual_2config_8h_a5658b6db6e6c73863f6c48265dd3c496}\label{Virtual_2config_8h_a5658b6db6e6c73863f6c48265dd3c496}} 
+Digital\+Encoder\+Joystick encoder \& {\bfseries btn\+Left}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Board specific configuration. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Breuer 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26.\+09.\+2022 
+\end{DoxyDate}
