@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['float2int_14',['float2int',['../structfloat2int.html',1,'']]]
+  ['mytimer_11',['MyTimer',['../classMyTimer.html',1,'']]]
 ];

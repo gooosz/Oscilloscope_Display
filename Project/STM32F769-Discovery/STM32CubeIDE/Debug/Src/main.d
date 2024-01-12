@@ -110,8 +110,7 @@ Src/main.o: \
  /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Peripheral/Display/Touch_FT6206.cpp \
  /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Peripheral/Display/Touch_FT6206.h \
  .././../../../Src/Board/STM32F769-Discovery/../../Resource/Color/Color.h \
- .././../../../Src/Board/STM32F769-Discovery/../../Resource/Font/Font_10x20.h \
- /home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/ringbuf_t.hpp
+ .././../../../Src/Board/STM32F769-Discovery/../../Resource/Font/Font_10x20.h
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/EmbSysLib.h:
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/MCU/STM32F7xx/Mcu_Types.h:
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/MCU/STM32F7xx/Sys/stm32f7xx.h:
@@ -223,4 +222,3 @@ Src/main.o: \
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Peripheral/Display/Touch_FT6206.h:
 .././../../../Src/Board/STM32F769-Discovery/../../Resource/Color/Color.h:
 .././../../../Src/Board/STM32F769-Discovery/../../Resource/Font/Font_10x20.h:
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/ringbuf_t.hpp:

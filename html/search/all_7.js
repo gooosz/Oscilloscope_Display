@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ringbuffer_9',['RingBuffer',['../classRingBuffer.html',1,'']]]
+  ['update_9',['update',['../classMyTimer.html#a219920ab2d4643554e9fe4385a57e522',1,'MyTimer']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_2ecpp_6',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['mytimer_7',['MyTimer',['../classMyTimer.html',1,'']]]
+  ['restartmeasurement_7',['restartMeasurement',['../main_8cpp.html#a9a3b5b5ac0ca2d57ff8ccd784dcb284c',1,'main.cpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getadcvolt_21',['getADCVolt',['../main_8cpp.html#aa14a93e72bb50b69ed58509efaaf6916',1,'main.cpp']]]
+  ['printtimerange_17',['printTimeRange',['../main_8cpp.html#a8f16f649bc66bd0a4cbd9a521cb046c6',1,'main.cpp']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['float2int_2',['float2int',['../structfloat2int.html',1,'float2int'],['../main_8cpp.html#a3610ced5cfc7faf38f5dcde09a5f57bf',1,'float2int(float value, int accuracy):&#160;main.cpp']]]
+  ['getadcvolt_1',['getADCVolt',['../main_8cpp.html#aa14a93e72bb50b69ed58509efaaf6916',1,'main.cpp']]],
+  ['getinputvoltage_2',['getInputVoltage',['../main_8cpp.html#a5c75f977565b876c8a76dc58dd382c87',1,'main.cpp']]]
 ];

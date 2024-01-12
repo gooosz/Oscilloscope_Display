@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mytimer_15',['MyTimer',['../classMyTimer.html',1,'']]]
+  ['ringbuffer_13',['RingBuffer',['../classRingBuffer.html',1,'']]]
 ];

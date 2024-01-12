@@ -1,4 +1,3 @@
-/opt/st/stm32cubeide_1.13.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.0.202305231506/tools/arm-none-eabi/include/c++/11.3.1/bits/std_abs.h:71:3:constexpr double std::abs(double)	16	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Common/I2C/I2Cmaster.h:64:9:EmbSysLib::Hw::I2Cmaster::Device::Device(EmbSysLib::Hw::I2Cmaster&, BYTE)	24	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Common/I2C/I2Cmaster.h:167:22:virtual BYTE EmbSysLib::Hw::I2Cmaster::Device::isError()	24	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/MCU/STM32F7xx/Src/Ltdc_Mcu.h:28:5:EmbSysLib::Hw::Ltdc_Mcu::Ltdc_Mcu(uint32_t)	16	static
@@ -41,24 +40,23 @@
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Peripheral/Display/DisplayGraphic_OTM8009A.cpp:290:6:virtual void EmbSysLib::Hw::DisplayGraphic_OTM8009Aram::setPixel(WORD)	16	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Peripheral/Display/Touch_FT6206.cpp:23:1:EmbSysLib::Hw::Touch_FT6206::Touch_FT6206(EmbSysLib::Hw::I2Cmaster&, WORD, WORD)	24	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Peripheral/Display/Touch_FT6206.cpp:34:6:virtual void EmbSysLib::Hw::Touch_FT6206::update()	24	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:68:7:float getADCVolt()	8	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:81:5:int yCoordFromVolt(double, int)	32	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:71:7:float getADCVolt()	8	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:83:7:float getInputVoltage(float, float)	32	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:97:6:void restartMeasurement(int&)	16	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:112:5:int yCoordFromVolt(double, int)	24	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Common/Timer/Timer.h:58:11:EmbSysLib::Hw::Timer::Task::Task()	16	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Device/Task/TaskManager.h:41:11:EmbSysLib::Dev::TaskManager::Task::Task()	16	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:107:2:MyTimer::MyTimer(EmbSysLib::Dev::TaskManager&)	16	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:117:7:virtual void MyTimer::update()	24	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:145:6:void drawCoordinateSystem(int, int)	80	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:219:5:int xCoordFromTime(int, int)	32	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:243:6:void printInfoText(float)	40	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:269:18:float2int float2int(float, int)	32	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:278:5:int main()	64	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:136:2:MyTimer::MyTimer(EmbSysLib::Dev::TaskManager&)	16	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:146:7:virtual void MyTimer::update()	24	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:174:6:void drawCoordinateSystem(int, int)	80	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:234:6:void printTimeRange()	16	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:242:5:int main()	56	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Std/Std.h:62:29:T EmbSysLib::Std::RANGE(T, T, T) [with T = long unsigned int]	24	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Common/I2C/I2Cmaster.h:112:14:void EmbSysLib::Hw::I2Cmaster::Device::read(A, T*) [with A = unsigned char; T = EmbSysLib::Hw::Touch_FT6206::TscData]	40	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Hardware/Common/Display/Type/Font.h:78:9:EmbSysLib::Hw::Font::Data<NUM_OF_CHAR, BYTE_PER_CHAR>::operator EmbSysLib::Hw::Font() const [with short unsigned int NUM_OF_CHAR = 96; unsigned char BYTE_PER_CHAR = 25]	16	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Std/Sequence.h:47:9:EmbSysLib::Std::Sequence<T>::Item::Item(EmbSysLib::Std::Sequence<T>*) [with T = EmbSysLib::Hw::Timer::Task]	16	static
-/opt/st/stm32cubeide_1.13.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.0.202305231506/tools/arm-none-eabi/include/c++/11.3.1/cmath:415:5:constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = int; _Up = int]	16	static
 /home/kicad/MicroC/Circuit/Code/mitdisplay2/EmbSysLib/Src/Std/Sequence.h:90:10:BYTE EmbSysLib::Std::Sequence<T>::add(T*) [with T = EmbSysLib::Hw::Timer::Task]	24	static
 .././../../../Src/Board/STM32F769-Discovery/ReportHandler.h:11:7:myReportHandler::~myReportHandler()	16	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:421:1:void __static_initialization_and_destruction_0(int, int)	56	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:421:1:cpp)	8	static
-/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:421:1:cpp)	8	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:305:1:void __static_initialization_and_destruction_0(int, int)	56	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:305:1:cpp)	8	static
+/home/kicad/MicroC/Circuit/Code/mitdisplay2/Template/Src/main.cpp:305:1:cpp)	8	static
