@@ -62,16 +62,13 @@ volatile float volts[SAMPLESIZEMAX] = {0};
 volatile bool voltsVoll = false;
 volatile int voltCount = 0;
 
-
-
 /// get Voltage at GPIO Pin
 ///
 /// @returns voltage measured at GPIO/ADC A1
-/// between 0V and 3V
+/// between 0V and 3.3V
 float getADCVolt(void)
 {
-	// 16-Bit register
-	//return (adc.get(adc_A1) * (float)gpio_vmax) / (unsigned)0xFFF;
+	// 16-Bit IDR register
 	return (adc.get(adc_A1) * gpio_vmax) / (unsigned)0xFFFF;
 }
 
@@ -125,9 +122,7 @@ int yCoordFromVolt(double volt, int pixelPerVolt)
 }
 
 
-/// Timer needed for using RTC
-///
-/// @see
+/// Timer needed for using RTC, Timer Interrupt
 class MyTimer : TaskManager::Task
 {
 public:
@@ -147,18 +142,14 @@ public:
 	{
 		// measure every 100µs
 		// 100µs defined in config.h l.130
-		// 100µs for 1 values => 10 values per ms are measured
-		// => 10_000 values per second
-		// 1/(10000 Werte/s) = 1s/(10000Werte) = 0.0001s pro Wert
-		// => Frequenz f = 1/(0.0001s) = 10k 1/s = 10kHz
 		time++;
 		if (!voltsVoll) {
-			volts[voltCount++] = getInputVoltage(getADCVolt(), 5);	// U_offset is 5V
+			// U_offset is 5V
+			volts[voltCount++] = getInputVoltage(getADCVolt(), 5);
 			if (voltCount == sampleSize) {
 				voltsVoll = true;
 			}
 		}
-		//......
 	}
 };
 
